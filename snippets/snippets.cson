@@ -1,0 +1,192 @@
+".text.html.vue":
+  "Component include":
+    "prefix": "component"
+    "body": "<${1:componentName}></${1:componentName}>"
+    "description": "Use a component in a template file"
+    "descriptionMoreURL": "https://vuejs.org/v2/guide/components.html"
+  "Router View":
+    "prefix": "router-view"
+    "body": "<router-view name=\"${1:routeName}\"></router-view>"
+    "description": "Vuejs router-view component"
+    "descriptionMoreURL": "https://router.vuejs.org/en/api/router-view.html"
+  'Router Link':
+    'prefix': 'router-link'
+    'body': '<router-link :to=\"{ name: \'${1:routeName}\', params: { ${2:property}: ${3:value}}}\"></router-link>'
+    'description': 'Vuejs router-link component with named route'
+    'descriptionMoreURL': 'https://router.vuejs.org/en/api/router-link.html'
+  "Vue Component template":
+    "prefix": "template"
+    "body": """
+      <template>
+        <div id="$1">
+
+        </div>
+      </template>
+      <script>
+      export default {
+        name: "$1",
+        data: function data() {
+          return {
+
+          }
+        }
+      }
+      </script>
+      <style>
+      </style>
+    """
+    "description": "Single file component"
+    "descriptionMoreURL": "https://vuejs.org/v2/guide/single-file-components.html"
+
+".meta.tag.block.any.html":
+  'v-for':
+    'prefix': 'v-for'
+    'body': 'v-for=\"${1:elem} in ${2:elemArray}\"'
+    'description': 'Vuejs binding for list rendering'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/list.html#v-for'
+  'v-if':
+    'prefix': 'v-if'
+    'body': 'v-if=\"${1:condition}\"'
+    'description': 'Vuejs binding for if conditional rendering'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-if'
+  'v-show':
+    'prefix': 'v-show'
+    'body': 'v-if=\"${1:condition}\"'
+    'description': 'Vuejs binding for if conditional rendering'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-show'
+  'v-else-if':
+    'prefix': 'v-if'
+    'body': 'v-else-if=\"${1:condition}\"'
+    'description': 'Vuejs binding for else-if conditional rendering'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-else-if'
+  'v-else':
+    'prefix': 'v-else'
+    'body': 'v-else'
+    'description': 'Vuejs binding for else conditional rendering'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-else'
+  'v-model':
+    'prefix': 'v-model'
+    'body': 'v-model=\"${1:model}\"'
+    'description': 'Vuejs binding for model binding'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/forms.html'
+
+'.source.js':
+  'Vue computed':
+    'prefix': 'vcomputed'
+    'body': """
+    computed: {
+      ${1:computedProperty}: function ${1:computedProperty}() {
+        return ${2:something}
+      }
+    }
+    """
+    'description': 'Vuejs computed property'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/computed.html'
+  'beforeCreate Vuejs hook':
+    'prefix': 'beforeCreate'
+    'body': """
+    beforeCreate: function beforeCreate() {
+      //do something before creating vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for beforeCreate'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'created Vuejs hook':
+    'prefix': 'created'
+    'body': """
+    created: function created() {
+      //do something after creating vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for created'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'beforeMount Vuejs hook':
+    'prefix': 'beforeMount'
+    'body': """
+    beforeMount: function beforeMount() {
+      //do something before mounting vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for beforeMount'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'mounted Vuejs hook':
+    'prefix': 'mounted'
+    'body': """
+    mounted: function mounted() {
+      //do something after mounting vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for mounted'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'beforeUpdate Vuejs hook':
+    'prefix': 'beforeUpdate'
+    'body': """
+    beforeUpdate: function beforeUpdate() {
+      //do something before updating vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for beforeUpdate'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'updated Vuejs hook':
+    'prefix': 'updated'
+    'body': """
+    updated: function updated() {
+      //do something after updating vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for updated'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'beforeDestroy Vuejs hook':
+    'prefix': 'beforeDestroy'
+    'body': """
+    beforeDestroy: function beforeDestroy() {
+      //do something before destroying vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for beforeDestroy'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'destroyed Vuejs hook':
+    'prefix': 'destroyed'
+    'body': """
+    destroyed: function destroyed() {
+      //do something after destroying vue instance
+    }
+    """
+    'description': 'Vuejs instance lifecycle hook for destroyed'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'Vue watch':
+    'prefix': 'vwatch'
+    'body': """
+    watch: {
+      ${1:propertyToWatch}: function ${1:propertyToWatch}Watcher() {
+        //do something when ${1:propertyToWatch} value changes
+      }
+    }
+    """
+    'description': 'Vuejs way to watch instance properties'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/computed.html#Watchers'
+  'Vuejs methods':
+    'prefix': 'methods'
+    'body': """
+    methods: {
+      ${{1:methodName}}: function ${{1:methodName}}() {
+
+      }
+    }
+    """
+    'description': 'Vuejs methods event handlers'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/events.html#Method-Event-Handlers'
+  'Vuejs components include':
+    'prefix': 'components'
+    'body': """
+    components: {
+      ${1:componentName}
+    }
+    """
+    'description': 'Use it when you want to add child components to parent component.'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/single-file-components.html'
+  'Vuejs props':
+    'prefix': 'props'
+    'body': 'props: [\'${1:propName}\']'
+    'description': 'Vuejs way to pass data to child components'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Props'
