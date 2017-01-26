@@ -169,7 +169,7 @@
     'prefix': 'methods'
     'body': """
     methods: {
-      ${{1:methodName}}: function ${{1:methodName}}() {
+      ${1:methodName}: function ${1:methodName}() {
 
       }
     }
