@@ -35,7 +35,7 @@
       <style>
       </style>
     """
-    "description": "Single file component"
+    "description": "Single file component template"
     "descriptionMoreURL": "https://vuejs.org/v2/guide/single-file-components.html"
 
 ".meta.tag.block.any.html":
@@ -52,7 +52,7 @@
   'v-show':
     'prefix': 'v-show'
     'body': 'v-if=\"${1:condition}\"'
-    'description': 'Vuejs binding for if conditional rendering'
+    'description': 'Vuejs binding for show conditional rendering'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-show'
   'v-else-if':
     'prefix': 'v-if'
