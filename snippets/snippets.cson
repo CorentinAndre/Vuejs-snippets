@@ -1,17 +1,17 @@
 ".text.html.vue":
   "Component include":
     "prefix": "component"
-    "body": "<${1:componentName}></${1:componentName}>"
+    "body": "<${1:componentName}>$2</${1:componentName}>"
     "description": "Use a component in a template file"
     "descriptionMoreURL": "https://vuejs.org/v2/guide/components.html"
   "Router View":
     "prefix": "router-view"
-    "body": "<router-view name=\"${1:routeName}\"></router-view>"
+    "body": "<router-view name=\"${1:routeName}\">$2</router-view>"
     "description": "Vuejs router-view component"
     "descriptionMoreURL": "https://router.vuejs.org/en/api/router-view.html"
   'Router Link':
     'prefix': 'router-link'
-    'body': '<router-link :to=\"{ name: \'${1:routeName}\', params: { ${2:property}: ${3:value}}}\"></router-link>'
+    'body': '<router-link :to=\"{ name: \'${1:routeName}\', params: { ${2:property}: ${3:value}}}\">$4</router-link>'
     'description': 'Vuejs router-link component with named route'
     'descriptionMoreURL': 'https://router.vuejs.org/en/api/router-link.html'
   "Vue Component template":
@@ -19,7 +19,7 @@
     "body": """
       <template>
         <div id="$1">
-
+          $2
         </div>
       </template>
       <script>
@@ -51,11 +51,11 @@
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-if'
   'v-show':
     'prefix': 'v-show'
-    'body': 'v-if=\"${1:condition}\"'
+    'body': 'v-show=\"${1:condition}\"'
     'description': 'Vuejs binding for show conditional rendering'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-show'
   'v-else-if':
-    'prefix': 'v-if'
+    'prefix': 'v-else-if'
     'body': 'v-else-if=\"${1:condition}\"'
     'description': 'Vuejs binding for else-if conditional rendering'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/conditional.html#v-else-if'
@@ -87,6 +87,7 @@
     'body': """
     beforeCreate: function beforeCreate() {
       //do something before creating vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for beforeCreate'
@@ -96,6 +97,7 @@
     'body': """
     created: function created() {
       //do something after creating vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for created'
@@ -105,6 +107,7 @@
     'body': """
     beforeMount: function beforeMount() {
       //do something before mounting vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for beforeMount'
@@ -114,6 +117,7 @@
     'body': """
     mounted: function mounted() {
       //do something after mounting vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for mounted'
@@ -123,6 +127,7 @@
     'body': """
     beforeUpdate: function beforeUpdate() {
       //do something before updating vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for beforeUpdate'
@@ -132,6 +137,7 @@
     'body': """
     updated: function updated() {
       //do something after updating vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for updated'
@@ -141,6 +147,7 @@
     'body': """
     beforeDestroy: function beforeDestroy() {
       //do something before destroying vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for beforeDestroy'
@@ -150,6 +157,7 @@
     'body': """
     destroyed: function destroyed() {
       //do something after destroying vue instance
+      $1
     }
     """
     'description': 'Vuejs instance lifecycle hook for destroyed'
@@ -160,6 +168,7 @@
     watch: {
       ${1:propertyToWatch}: function ${1:propertyToWatch}Watcher() {
         //do something when ${1:propertyToWatch} value changes
+        $2
       }
     }
     """
@@ -170,7 +179,7 @@
     'body': """
     methods: {
       ${1:methodName}: function ${1:methodName}() {
-
+        $2
       }
     }
     """
