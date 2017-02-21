@@ -38,7 +38,7 @@
     "description": "Single file component template"
     "descriptionMoreURL": "https://vuejs.org/v2/guide/single-file-components.html"
 
-".meta.tag.block.any.html, .meta.tag.inline.any.html":
+".meta.tag":
   'v-for':
     'prefix': 'v-for'
     'body': 'v-for=\"${1:elem} in ${2:elemArray}\"'
