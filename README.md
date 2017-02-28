@@ -1,5 +1,8 @@
 # Vuejs-snippets
-Collection of Vue.js snippets for version 2.0+
+Collection of Vue.js snippets for version 2.0+.
+Also supports Vuex, vue-router still missing.
+
+Feel free to contribute to this package by submitting a PR!
 
 ## Usage
 
@@ -28,20 +31,27 @@ v-model           <!--Vuejs binding for model binding-->
 
 ### Javascript
 ```javascript
-beforeCreate      //Vuejs instance lifecycle hook for beforeCreate
-created           //Vuejs instance lifecycle hook for created
-beforeMount       //Vuejs instance lifecycle hook for beforeMount
-mounted           //Vuejs instance lifecycle hook for mounted
-beforeUpdate      //Vuejs instance lifecycle hook for beforeUpdate
-updated           //Vuejs instance lifecycle hook for updated
-beforeUpdate      //Vuejs instance lifecycle hook for beforeUpdate
-updated           //Vuejs instance lifecycle hook for updated
-beforeDestroy     //Vuejs instance lifecycle hook for beforeDestroy
-destroyed         //Vuejs instance lifecycle hook for destroyed
-vwatch            //Vuejs way to watch instance properties
-methods           //Vuejs methods event handlers
-components        //Use it when you want to add child components to parent component.
-props             //Vuejs way to pass data to child components
-vcomputed         //Vuejs computed property
+beforeCreate      // Vuejs instance lifecycle hook for beforeCreate
+created           // Vuejs instance lifecycle hook for created
+beforeMount       // Vuejs instance lifecycle hook for beforeMount
+mounted           // Vuejs instance lifecycle hook for mounted
+beforeUpdate      // Vuejs instance lifecycle hook for beforeUpdate
+updated           // Vuejs instance lifecycle hook for updated
+beforeUpdate      // Vuejs instance lifecycle hook for beforeUpdate
+updated           // Vuejs instance lifecycle hook for updated
+beforeDestroy     // Vuejs instance lifecycle hook for beforeDestroy
+destroyed         // Vuejs instance lifecycle hook for destroyed
+vwatch            // Vuejs way to watch instance properties
+methods           // Vuejs methods event handlers
+components        // Use it when you want to add child components to parent component.
+props             // Vuejs way to pass data to child components
+vcomputed         // Vuejs computed property
 ```
 
+### Vuex
+```javascript
+vstore            // Vuex template for a complete store with state,getters,actions and mutations
+vmut              // Vuex mutation snippet
+vact              // Vuex action snippet
+vget              // Vuex getter snippet
+```

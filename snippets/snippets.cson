@@ -41,7 +41,7 @@
 ".meta.tag":
   'v-for':
     'prefix': 'v-for'
-    'body': 'v-for=\"${1:elem} in ${2:elemArray}\"'
+    'body': 'v-for=\"${1:elem} in ${2:elemArray}\" :key=\"${1:elem}.${3:key}\"'
     'description': 'Vuejs binding for list rendering'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/list.html#v-for'
   'v-if':
@@ -69,6 +69,9 @@
     'body': 'v-model=\"${1:model}\"'
     'description': 'Vuejs binding for model binding'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/forms.html'
+  'v-bind':
+    'prefix': 'v-bind'
+    'body': ':${1:attribute}=\"${2}\"'
 
 '.source.js':
   'Vue computed':
@@ -199,3 +202,65 @@
     'body': 'props: [\'${1:propName}\']'
     'description': 'Vuejs way to pass data to child components'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Props'
+
+'.source.js.jsx':
+  'Store template':
+    'prefix': 'vstore'
+    'body': """
+    //Imports on top
+
+    const state = {
+      // Initial state of ${1:your store}
+
+    };
+
+    const getters = {
+      // Getters to access ${1:your store} values
+
+    };
+
+    const actions = {
+      // Asynchronous mutations commits to modify ${1:your store}
+
+    }
+
+    const mutations = {
+      // Synchronous modifications of ${1: your store}
+    }
+
+    export default {
+      state,
+      getters,
+      actions,
+      mutations
+    }
+    """
+    'description': 'Vuex template for a complete store to be imported as a module or as a single file store.'
+    'descriptionMoreURL': 'https://vuex.vuejs.org/en/structure.html'
+  'Mutation template':
+    'prefix': 'vmut'
+    'body': """
+    [${1:mutation_type}] (state, $2) {
+      $3
+    }
+    """
+    'description': 'Vuex snippet for mutations.'
+    'descriptionMoreURL': 'https://vuex.vuejs.org/en/mutations.html'
+  'Action template':
+    'prefix': 'vact'
+    'body': """
+    ${1:action_name}({
+      commit,
+      state
+    }, $2) {
+        // Asynchronous stuff here.
+        $3
+      }
+    """
+    'description': 'Vuex snippet for actions.'
+    'descriptionMoreURL': 'https://vuex.vuejs.org/en/actions.html'
+  'Getter template':
+    'prefix': 'vget'
+    'body': '${1:variable}: () => state.${1:variable}'
+    'description': 'Vuex snippet for getters.'
+    'descriptionMoreURL': 'https://vuex.vuejs.org/en/getters.html'
