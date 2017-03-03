@@ -264,3 +264,6 @@
     'body': '${1:variable}: () => state.${1:variable}'
     'description': 'Vuex snippet for getters.'
     'descriptionMoreURL': 'https://vuex.vuejs.org/en/getters.html'
+  'Mutation type':
+    'prefix': 'vtype'
+    'body': 'export const ${1:MUTATION_TYPE} = \'${1:MUTATION_TYPE}\''
