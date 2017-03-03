@@ -1,6 +1,6 @@
 [![Installs!](https://img.shields.io/apm/dm/vuejs2-snippets.svg?style=flat-square)](https://atom.io/packages/vuejs2-snippets)
 [![Version!](https://img.shields.io/apm/v/vuejs2-snippets.svg?style=flat-square)](https://atom.io/packages/vuejs2-snippets)
-[![License](https://img.shields.io/apm/l/vuejs2-snippets.svg?style=flat-square)](https://github.com/CorentinAndre/Vuejs-snippets)
+[![License](https://img.shields.io/apm/l/vuejs2-snippets.svg?style=flat-square)](https://github.com/CorentinAndre/Vuejs-snippets/blob/master/LICENSE)
 
 # Vuejs-snippets
 Collection of Vue.js snippets for version 2.0+.
