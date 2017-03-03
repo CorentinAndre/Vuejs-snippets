@@ -54,4 +54,5 @@ vstore            // Vuex template for a complete store with state,getters,actio
 vmut              // Vuex mutation snippet
 vact              // Vuex action snippet
 vget              // Vuex getter snippet
+vtype             // Vuex constant type snipppet
 ```
