@@ -202,6 +202,20 @@
     'body': 'props: [\'${1:propName}\']'
     'description': 'Vuejs way to pass data to child components'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Props'
+  'Vuejs props with validation':
+    'prefix': 'vprops'
+    'body': """
+    props: {
+      \'${1:propName}\': {
+        type: \'${1:propType}\',
+        default() {
+          return \'${1:propDefault}\';
+        }
+      },
+    },
+    """
+    'description': 'Vuejs way to pass data to child components with validation'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Prop-Validation'
 
 '.source.js.jsx':
   'Store template':

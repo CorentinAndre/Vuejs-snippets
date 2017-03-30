@@ -49,6 +49,7 @@ vwatch            // Vuejs way to watch instance properties
 methods           // Vuejs methods event handlers
 components        // Use it when you want to add child components to parent component.
 props             // Vuejs way to pass data to child components
+vprops            // Vuejs way to pass data to child components with validation
 vcomputed         // Vuejs computed property
 ```
 
