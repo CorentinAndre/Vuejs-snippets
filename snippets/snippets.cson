@@ -212,8 +212,8 @@
         default: function() {
           return \'${4:propDefault}\';
         }
-      },
-    },
+      }
+    }
     """
     'description': 'Vuejs way to pass data to child components with validation'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Prop-Validation'
