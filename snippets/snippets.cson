@@ -208,7 +208,7 @@
     props: {
       \'${1:propName}\': {
         type: ${2:propType},
-        required: {3:true},
+        required: ${3:true},
         default: function() {
           return \'${4:propDefault}\';
         }
