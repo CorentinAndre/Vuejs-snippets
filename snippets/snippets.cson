@@ -19,7 +19,7 @@
     "body": """
       <template>
         <div id="$1">
-          $2
+
         </div>
       </template>
       <script>
@@ -32,7 +32,7 @@
         }
       }
       </script>
-      <style>
+      <style${2: lang="${3:scss}"}>
       </style>
     """
     "description": "Single file component template"
@@ -207,9 +207,10 @@
     'body': """
     props: {
       \'${1:propName}\': {
-        type: \'${1:propType}\',
-        default() {
-          return \'${1:propDefault}\';
+        type: \'${2:propType}\',
+        required: {3:true},
+        default: function() {
+          return \'${4:propDefault}\';
         }
       },
     },
