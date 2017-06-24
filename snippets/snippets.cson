@@ -25,14 +25,12 @@
       <script>
       export default {
         name: '$1',
-        data: function data() {
-          return {
+        data: () => ({
 
-          }
-        }
+        })
       }
       </script>
-      <style${2: lang="${3:scss}"}>
+      <style${2: lang="${3:scss}"} scoped>
       </style>
     """
     "description": "Single file component template"
