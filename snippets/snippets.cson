@@ -24,13 +24,13 @@
       </template>
       <script>
       export default {
-        name: '$1',
+        name: "$1",
         data: () => ({
 
         })
       }
       </script>
-      <style${2: lang="${3:scss}"} scoped>
+      <style${2: lang="${3:scss}"} ${4:scoped}>
       </style>
     """
     "description": "Single file component template"
