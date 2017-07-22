@@ -186,6 +186,15 @@
     """
     'description': 'Vuejs methods event handlers'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/events.html#Method-Event-Handlers'
+  'Vuejs data':
+    'prefix': 'vdata'
+    'body': """
+    data: () => ({
+      $1
+    })
+    """
+    'description': 'Vuejs data must be a function'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function'
   'Vuejs components include':
     'prefix': 'components'
     'body': """
