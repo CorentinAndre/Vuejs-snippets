@@ -22,6 +22,7 @@ template          <!--Single file component template-->
 router-view       <!--Vuejs router-view component-->
 router-link       <!--Vuejs router-link component with named route-->
 component         <!--Include component in HTML-->
+i18n              <!--Include internationalization component-->
 ```
 ### HTML tags
 ```html
