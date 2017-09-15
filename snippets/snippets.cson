@@ -35,6 +35,19 @@
     """
     "description": "Single file component template"
     "descriptionMoreURL": "https://vuejs.org/v2/guide/single-file-components.html"
+  "Internationalization component":
+    "prefix": "i18n",
+    "body": """
+      <i18n>
+      {
+        "${1:en}": {
+          "${2:key}": "${3:value}"
+        }
+      }
+      </i18n>
+    """
+    "description": "Per component translation"
+    "descriptionMoreURL": "http://kazupon.github.io/vue-i18n/en/sfc.html"
 
 ".meta.tag":
   'v-for':
