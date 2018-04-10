@@ -4,6 +4,11 @@
     "body": "<${1:componentName}>$2</${1:componentName}>"
     "description": "Use a component in a template file"
     "descriptionMoreURL": "https://vuejs.org/v2/guide/components.html"
+  "Self closed component":
+    "prefix": "sccomponent"
+    "body": "<${1:componentName}/>"
+    "description": "Use a self closed component in a template file"
+    "descriptionMoreURL": "https://vuejs.org/v2/guide/components.html"
   "Router View":
     "prefix": "router-view"
     "body": "<router-view name=\"${1:routeName}\">$2</router-view>"
