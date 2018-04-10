@@ -186,6 +186,33 @@
     """
     'description': 'Vuejs instance lifecycle hook for destroyed'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'beforeRouteEnter Vue-router hook':
+    'prefix': 'beforeRouteEnter'
+    'body': """
+    beforeRouteEnter(to, from, next) {
+      $1
+    }
+    """
+    'description': 'Vue-router instance lifecycle hook for beforeRouteEnter'
+    'descriptionMoreURL': 'https://router.vuejs.org/en/advanced/navigation-guards.html'
+  'beforeRouteUpdate Vue-router hook':
+    'prefix': 'beforeRouteUpdate'
+    'body': """
+    beforeRouteUpdate(to, from, next) {
+      $1
+    }
+    """
+    'description': 'Vue-router instance lifecycle hook for beforeRouteUpdate'
+    'descriptionMoreURL': 'https://router.vuejs.org/en/advanced/navigation-guards.html'
+  'beforeRouteLeave Vue-router hook':
+    'prefix': 'beforeRouteLeave'
+    'body': """
+    beforeRouteLeave(to, from, next) {
+      $1
+    }
+    """
+    'description': 'Vue-router instance lifecycle hook for beforeRouteLeave'
+    'descriptionMoreURL': 'https://router.vuejs.org/en/advanced/navigation-guards.html'
   'Vue watch':
     'prefix': 'vwatch'
     'body': """
