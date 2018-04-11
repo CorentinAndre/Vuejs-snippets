@@ -88,6 +88,12 @@
   'v-bind':
     'prefix': 'v-bind'
     'body': ':${1:attribute}=\"${2}\"'
+  'v-bind:class as an object':
+    'prefix': 'vClassObj'
+    'body': ':class=\"{${1:className}: ${2:property}}\"'
+  'v-bind:class as an array':
+    'prefix': 'vClassArr'
+    'body': ':class=\"[${1:property}]\"'
 
 '.source.js':
   'Vue computed':
